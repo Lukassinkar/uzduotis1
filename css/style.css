@@ -1,0 +1,51 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+.section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px;
+}
+.item {
+  width: calc(33.333% - 40px);
+}
+.cover {
+  width: 100%;
+}
+.title {
+  color: #17242f;
+  font-size: 2.6rem;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+.text {
+  color: #5d7281;
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin: 0;
+}
+.price {
+  color: #2995f2;
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin-top: 0;
+}
+.extra {
+  color: #94a2ac;
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+@media only screen and (max-width: 1500px) {
+  .item {
+    width: calc(50% - 30px);
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .item {
+    width: 100%;
+  }
+}
